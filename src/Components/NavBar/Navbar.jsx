@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Navbar.css'
 import logo from '../Assets/logo.png'
 import profile from '../Assets/profile.png'
@@ -21,7 +21,7 @@ const Navbar = () => {
                 <li onClick={()=>{setMenu("browse")}}><Link style={{ textDecoration: 'none'}} to='/'>Browse</Link>{menu==="browse"?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu("messages")}}><Link style={{ textDecoration: 'none'}} to='/messages'>Messages</Link>{menu==="messages"?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu("listing")}}><Link style={{ textDecoration: 'none'}} to='/listing'>Listing</Link>{menu==="listing"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("wishlist")}}><Link style={{ textDecoration: 'none'}} to='/wishlist'>Wishlist</Link>{menu==="wishlist"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("cart")}}><Link style={{ textDecoration: 'none'}} to='/cart'>Cart</Link>{menu==="cart"?<hr/>:<></>}</li>
             </ul>
             <div className="nav-profile">
                 <Link to='profile'>

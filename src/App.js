@@ -4,7 +4,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Browse from './Pages/Browse';
 import Messages from './Pages/Messages';
 import Listing from './Pages/Listing';
-import Wishlist from './Pages/Wishlist';
+import Cart from './Pages/Cart';
 import Product from './Pages/Product';
 import LoginSignup from './Pages/LoginSignup';
 import Footer from './Components/Footer/Footer';
@@ -18,7 +18,7 @@ function App() {
         <Route path='/' element={<Browse/>}/>
         <Route path='/messages' element={<Messages/>}/>
         <Route path='/listing' element={<Listing/>}/>
-        <Route path='/wishlist' element={<Wishlist/>}/>
+        <Route path='/cart' element={<Cart/>}/>
         <Route path='/product' element={<Product/>}>
           <Route path=':productId' element={<Product/>}/>
         </Route>
