@@ -24,15 +24,15 @@ const Navbar = () => {
                 <li onClick={()=>{setMenu("listing")}}><Link style={{ textDecoration: 'none'}} to='/listing'>Listing</Link>{menu==="listing"?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu("cart")}}><Link style={{ textDecoration: 'none'}} to='/cart'>Cart</Link>{menu==="cart"?<hr/>:<></>}</li>
             </ul>
-            <div className="nav-profile">
-                <Link to='profile'>
-                    <img src={profile} alt="" width="30" height="30"/>
-                </Link>
-            </div>
             <div className="nav-search" onClick={()=>{setMenu("products")}}>
                 <Link to='/products'>
                     <img src={search} alt="" width="30" height="30"/>
                 </Link>{menu==="products"?<hr/>:<></>}
+            </div>
+            <div className="nav-profile">
+                <Link to='profile'>
+                    <img src={profile} alt="" width="30" height="30"/>
+                </Link>
             </div>
         </div>
     )
