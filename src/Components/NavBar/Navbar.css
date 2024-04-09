@@ -63,3 +63,8 @@
 .nav-login-cart button:active{
     background-color: antiquewhite;
 }
+.nav-search{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}

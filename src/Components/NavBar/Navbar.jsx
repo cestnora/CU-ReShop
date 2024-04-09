@@ -3,6 +3,7 @@ import './Navbar.css'
 import logo from '../Assets/logo.png'
 import profile from '../Assets/profile.png'
 import { Link } from 'react-router-dom'
+import search from '../Assets/search.png'
 
 
 const Navbar = () => {
@@ -27,7 +28,11 @@ const Navbar = () => {
                 <Link to='profile'>
                     <img src={profile} alt="" width="30" height="30"/>
                 </Link>
-                
+            </div>
+            <div className="nav-search" onClick={()=>{setMenu("products")}}>
+                <Link to='/products'>
+                    <img src={search} alt="" width="30" height="30"/>
+                </Link>{menu==="products"?<hr/>:<></>}
             </div>
         </div>
     )
