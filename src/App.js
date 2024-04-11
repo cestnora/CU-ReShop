@@ -10,6 +10,8 @@ import LoginSignup from './Pages/LoginSignup';
 import Footer from './Components/Footer/Footer';
 import Products from './Pages/Products';
 import Profile from './Pages/Profile';
+import Signup from './Pages/Signup'
+import Login from './Pages/Login'
 
 function App() {
   return (
