@@ -9,6 +9,7 @@ import Product from './Pages/Product';
 import LoginSignup from './Pages/LoginSignup';
 import Footer from './Components/Footer/Footer';
 import Products from './Pages/Products';
+import Profile from './Pages/Profile';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/products' element={<Products/>}/>
+        <Route path='/profile' element={<Profile/>}/>
       </Routes>
       <Footer />
       </BrowserRouter>
